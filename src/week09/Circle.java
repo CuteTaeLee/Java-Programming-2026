@@ -8,15 +8,10 @@ public class Circle {
     // 필드(Field): 객체의 속성
     int radius;
     String name;
-    
-    public Circle() {
-    	radius = 1;
-    	name = "";
-    }
-    
-    public Circle(int r, String n) {
-    	radius = r;
-    	name = n;
+     
+    public Circle(int radius, String name) {
+    	this.radius = radius;
+    	this.name = name;
     }
     
     /**
@@ -40,11 +35,11 @@ public class Circle {
         System.out.println(pizza.name + "의 면적은 " + area);
         
         // 또 다른 객체 생성 (동일한 설계도로 만든 별개의 존재)
-        Circle donut = new Circle(); 
+        Circle donut = new Circle(10, "인생피자"); 
    
         System.out.println(donut.name + "의 면적은 " + donut.getArea());
         
-        Circle anony = new Circle();
+        Circle anony = new Circle(20, "아무개");
         anony.name = "아무개";
         
         System.out.println(anony.name + "의 면적 : " + anony.getArea());

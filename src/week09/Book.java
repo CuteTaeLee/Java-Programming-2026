@@ -3,9 +3,12 @@ package week09;
 public class Book {
 	String title, author;
 
+	public Book() {
+		this("", "");
+	}
+
 	public Book(String title) { // 생성자
-		this.title = title;
-		author = "작자미상";
+		this(title, "작자미상");
 	}
 
 	public Book(String title, String author) { // 생성자

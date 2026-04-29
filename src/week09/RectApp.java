@@ -5,6 +5,19 @@ import java.util.Scanner;
 class Rectangle {
 	int width, height;
 
+	public Rectangle(int width, int height) {
+		this.width = width;
+		this.height = height;
+	}
+
+	public Rectangle(int width) {
+		this(width,2);
+	}
+
+	public Rectangle() {
+		this(1,2);
+	}
+
 	/**
 	 * 면적 가져오는 함수
 	 * 

@@ -1,4 +1,4 @@
-package weeok10;
+package week10;
 
 class Dice {
 
